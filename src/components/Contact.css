@@ -43,6 +43,10 @@
     mask-repeat: no-repeat;
     mask-position: center;
     mask-size: cover;
+    -webkit-mask: url("../assets/blob.svg");
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-size: cover;
 }
 
 .contact .right h2{

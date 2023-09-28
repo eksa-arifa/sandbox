@@ -20,6 +20,10 @@
     mask-repeat: no-repeat;
     mask-size: cover;
     mask-position: center;
+    -webkit-mask: url("../assets/blob2.svg");
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+    -webkit-mask-position: center;
 }
 
 .skill .right{
