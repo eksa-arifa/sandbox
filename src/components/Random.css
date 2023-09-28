@@ -1,0 +1,111 @@
+.random{
+    width: 100vw;
+    min-height: 100vh;
+    background: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2FVfn6C0z.jpg&f=1&nofb=1&ipt=724741ad66603e6a120b9601d8e96daa396b9cc620fb75ff9eeb45d4cce83504&ipo=images);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.random h2{
+    width: 100%;
+    text-align: center;
+    padding: 50px 0;
+    color: crimson;
+    text-decoration: underline;
+}
+
+.random .flex{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 40px 0;
+}
+
+.random .flex .card{
+    width: 250px;
+    height: 300px;
+    background: white;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.4);
+    transition: 1s all;
+}
+
+.random .flex .card.active{
+    width: calc(100% / 3);
+}
+
+.random .flex .card.active .bukaan{
+    display: none;
+}
+
+.random .flex .card img{
+    width: 230px;
+}
+
+.random .flex .card .bukaan{
+    padding: 0 10px;
+}
+
+.random .flex .card .detail{
+    height: 100%;
+    padding: 10px;
+}
+
+.random .flex .card .detail .judul{
+    color: crimson;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.random .flex .card .detail .alasan{
+    padding: 0 10px;
+    color: purple;
+}
+
+
+@media (max-width: 1310px){
+    .random .flex{
+        flex-wrap: wrap;
+    }
+    .random .flex .card{
+        width: calc(100% / 2.5);
+    }
+    .random .flex .card .bukaan{
+        display: none;
+    }
+    .random .flex .card.active{
+        width: calc(100% / 2.5);
+    }
+}
+
+@media (max-width: 1130px){
+    .random .flex .card{
+        width: 80%;
+    }
+    .random .flex .card.active{
+        width: 80%;
+    }
+}
+
+@media (max-width: 700px){
+    .random .flex{
+        flex-direction: column;
+    }
+    .random .flex .card{
+        width: 300px;
+        height: 400px;
+        flex-direction: column;
+    }
+    .random .flex .card.active{
+        width: 300px;
+        height: 700px;
+    }
+    .random .flex .card img{
+        width: 100%;
+    }
+}

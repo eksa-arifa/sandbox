@@ -1,0 +1,82 @@
+.skill{
+    padding: 50px 0;
+    width: 100vw;
+    min-height: 100vh;
+    background: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp7170402.jpg&f=1&nofb=1&ipt=d0ac0b2bfc78c8b3f87b11ba61444d463e7f4467966d5b5b14fb63fdda0887a7&ipo=images");
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-attachment: fixed;
+}
+
+.skill .left{
+    width: 40%;
+}
+
+.skill .left img{
+    width: 100%;
+    border-radius: 10px;
+    mask: url("../assets/blob2.svg");
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    mask-position: center;
+}
+
+.skill .right{
+    width: 40%;
+    padding: 20px;
+    background: white;
+    position: relative;
+}
+
+.skill .right::after{
+    content: '';
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    transform: rotate(45deg) translateY(-50%);
+    background: white;
+}
+
+.skill .right h2{
+    text-align: center;
+    color: crimson;
+    text-decoration: underline;
+}
+
+.skill .right ul{
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.skill .right ul li{
+    list-style: none;
+    padding: 10px;
+    background: linear-gradient(to bottom right, crimson, purple, red);
+    color: white;
+}
+
+@media (max-width: 800px){
+    .skill{
+        flex-direction: column;
+    }
+    .skill .left{
+        width: 80%;
+    }
+    .skill .right{
+        width: 80%;
+    }
+    .skill .right::after{
+        width: 20px;
+        height: 20px;
+        top: -10px;
+        left: 50%;
+        transform: rotate(45deg) translateY(50%) translateX(-50%);
+    }
+}

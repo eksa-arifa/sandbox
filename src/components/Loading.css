@@ -1,0 +1,52 @@
+.loading{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    transition: all 1.5s ease-in-out;
+}
+.loading.nonactive{
+    top: 100%;
+}
+
+.loading .loader{
+    color: white;
+    text-align: center;
+}
+
+.loading .loader .pre{
+    animation: muter 1s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+
+
+@keyframes muter{
+    0%{
+        transform: rotate(0);
+    }
+    20%{
+        transform: rotate(72deg);
+    }
+    40%{
+        transform: rotate(144deg);
+    }
+    60%{
+        transform: rotate(216deg);
+    }
+    80%{
+        transform: rotate(288deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

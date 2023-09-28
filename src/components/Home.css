@@ -1,0 +1,90 @@
+.home{
+    width: 100vw;
+    height: 100vh;
+    background: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages8.alphacoders.com%2F100%2Fthumb-1920-1005865.jpg&f=1&nofb=1&ipt=6dea7cfaf76f00e5227730ad825a4396ed199be068dca60c2799bc3ba04456b6&ipo=images');
+    /* background-position: center; */
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.home::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 20px;
+    background: rgb(46,46,46);
+    border-radius: 10px 10px 0 0;
+}
+
+.inviso{
+    width: 50%;
+}
+
+.text-section{
+    width: 40%;
+   color: white;
+   padding: 20px;
+   background: white;
+   position: relative;
+}
+
+.text-section::after{
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background: white;
+    top: 20px;
+    left: -10px;
+    transform: rotate(45deg);
+}
+
+.text-section h2{
+    color: crimson;
+}
+
+.text-section p{
+    padding: 20px;
+    color: purple;
+}
+
+.text-section .link{
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.text-section .link a{
+    color: white;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(to bottom right, crimson, purple);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 700px){
+    .home{
+        flex-direction: column;
+    }
+    .inviso{
+        width: 0;
+    }
+    .text-section{
+        width: 80%;
+    }
+    .text-section::after{
+        top: -10px;
+        left: 80%;
+        transform: translateX(-50%);
+        transform: rotate(45deg);
+    }
+}
